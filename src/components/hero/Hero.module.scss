@@ -1,0 +1,98 @@
+@import '../../styles/contants.scss';
+
+.wrapper{
+    overflow: hidden;
+    .container{
+        position:relative;
+        z-index:1;
+
+        .upperElements{
+            @media(max-width:$sm),(max-width:$md){
+                justify-content: center;
+                gap:2rem;
+                text-align: center;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap:wrap;
+        }
+
+        .lowerElements{
+            margin-top: 12rem;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            @media(max-width:$sm),(max-width:$md){
+                margin-top: 4rem;
+                gap:2rem;
+                justify-content:center;
+            }
+        }
+        
+        .experience{
+            display:flex;
+            align-items:center;
+            gap:1rem;
+            >:nth-child(2){
+                line-height: 25px;
+            }
+        }
+        .certificate{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            img{
+                margin-bottom: 1rem;
+                width: 3.5rem;
+            }
+        }
+
+        .person{
+            position:absolute;
+            background-image:url("../splash.png");
+            background-repeat:no-repeat;
+            margin: auto;
+            background-size:20rem;
+            left:33%;
+            bottom:0.1rem;
+            img{
+                position: relative;
+                width:50%;
+                height: auto;
+                left:3.5rem;
+                top:0.25rem;
+                @media(max-width:$sm),(max-width:$md){
+                    position: relative;
+                    width:50%;
+                    height: auto;
+                    left:1.6rem;
+                    top:0.1rem;
+                }
+            }
+            @media(max-width:$sm),(max-width:$md){
+                position: relative;
+                left:-0.8rem;
+                top:5vw;
+                background-size: 50vw;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                background-position: bottom;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .email{
+            position: absolute;
+            color:seagreen;
+            top:50%;
+            font-weight: 700;
+            @media(max-width:$sm),(max-width:$md){
+                display: none;
+            }
+        }
+        
+
+    }
+}

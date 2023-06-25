@@ -1,0 +1,17 @@
+.toggle{
+    color:seagreen;
+    display: flex;
+    justify-content: space-between;
+    border:3px solid seagreen;
+    border-radius:1rem;
+    gap:0.8rem;
+    padding:0.2rem;
+    cursor: pointer;
+    position: relative;
+    .tbutton{
+        border-radius: 50%;
+        border:0.65rem solid seagreen;
+        position: absolute;
+        top:0.05rem;
+    }
+}

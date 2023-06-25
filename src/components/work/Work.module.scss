@@ -1,0 +1,28 @@
+.wrapper{
+    overflow: hidden;
+    position: relative;
+    .container{
+        display:flex;
+        flex-direction: column;
+        gap:1rem;
+        align-items: center;
+        .logo{
+            img{
+                position: relative;
+                width: 20%;
+                height:auto;
+                margin-bottom: -2.5rem;
+                left:40%;
+            }
+        }
+        .name{
+            font-weight: 800;
+        }
+        .experience{
+            font-weight: 500;
+        }
+        .role{
+
+        }
+    }
+}

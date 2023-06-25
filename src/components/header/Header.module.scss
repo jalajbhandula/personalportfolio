@@ -1,0 +1,78 @@
+@import '../../styles/contants.scss';
+
+.wrapper{
+    z-index:99;
+    transform:none;
+    position: sticky;
+    background-color: inherit;
+    top:0;
+    transition: all 300ms ease;
+    .container{
+        position:relative;
+        justify-content: space-between;
+        font-weight:500;
+
+        .name{
+            font-size :2rem;
+            font-weight: 700;
+        }
+
+        .menu{
+
+            @media(max-width: $sm),
+            (max-width: $md){
+             position:absolute;
+             list-style: none;
+             gap:2rem;
+             font-weight:500;
+             flex-direction: column;
+             top:3rem;
+             right:0;
+             width:50%;
+             min-width:15rem;
+             background:white;
+             padding:3rem;
+             display: flex;
+             border-radius:2rem;
+             transition: all 300ms ease;
+             align-items:flex-start;
+             justify-content: flex-end;
+             box-shadow: 0px 4px 4px rgba(0,0,0,0.05);
+            }
+            text-transform: uppercase;
+            font-size: 1rem;
+            list-style:none;
+            gap: 1.5rem;
+            cursor: pointer;
+
+        }
+
+        li{
+            a{
+                color:inherit;
+                text-decoration:none;
+            }
+            a:hover{
+                color:$secondary;
+            }
+        }
+        .phone{
+            gap:1.2rem;
+            svg{
+                color:$secondary;
+                background-color: white;
+                border-radius :9999px;
+                box-shadow: 0px 4px 4px rgba(0,0,0,0.05);
+                padding:10px;
+            }
+        }
+
+    }
+    .menuIcon{
+        @media(max-width:$sm),
+        (max-width:$md){
+            display: block;
+        }
+        display:none;
+    }    
+}
